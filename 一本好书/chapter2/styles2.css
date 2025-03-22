@@ -84,48 +84,48 @@ button:hover {
 
 
 .btn-green {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: #4CAF50;
+    color: white;
 }
 
 .btn-green:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
 
 .btn-blue {
     background-color: #3498db;
-    color: white; 
+    color: white;
 }
 
 .btn-blue:hover {
-    background-color: #2980b9; 
+    background-color: #2980b9;
 }
 
 
 .btn-red {
-    background-color: #e74c3c; 
-    color: white; 
+    background-color: #e74c3c;
+    color: white;
 }
 
 .btn-red:hover {
-    background-color: #c0392b; 
+    background-color: #c0392b;
 }
 
 .btn-hidden {
-    background-color: #FAFAD2; 
+    background-color: #FAFAD2;
     color:black;
-    margin: 20px auto; /* 上下外边距为20px，左右外边距自动居中 */
+    margin: 20px auto;
 }
 
 .btn-hidden:hover {
-    background-color: #DAA520; 
-    
+    background-color: #DAA520;
+
 }
 
-/* 选择所有的 <a> 标签 */
+
 a {
-    color: inherit; /* 继承父元素的颜色 */
-    text-decoration: none; /* 去掉下划线 */
+    color: inherit;
+    text-decoration: none;
     cursor: pointer; /* 鼠标指针显示为手型，表示可点击 */
 }
 

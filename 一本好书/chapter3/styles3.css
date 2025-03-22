@@ -1,15 +1,11 @@
 ﻿body{
-    /* 高度 */
     height: 100vh;
     font-family: sans-serif;
     font-size: 5vw;
-    /* 字体转大写 */
     text-transform: uppercase;
-    /* 溢出隐藏 */
     overflow: hidden;
 }
 .disappear{
-    /* 居中显示 */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -17,14 +13,10 @@
 }
 
 .disappear span{
-    /* 行内块元素 */
     display: inline-block;
-    /* 颜色透明 */
     color: transparent;
-    /* 文字阴影 */
     text-shadow: 0px 0px 0px black;
-    /* 动画 执行3s 匀速，无限次 */
-    animation: an-1 10s linear 1 forwards;
+    animation: an-1 10s linear 1 forwards;  /* 动画 执行3s 匀速，无限次 */
 }
 h1 {
     margin-bottom: 20px;
@@ -32,11 +24,8 @@ h1 {
 
 @keyframes an-1 {
     50%{
-        /* 倾斜转换，页面垂直移动元素 */
-        transform: skew(-50deg) translateY(-200%);
-        /* 文字阴影 */
+        transform: skew(-50deg) translateY(-200%);  /* 倾斜转换，页面垂直移动元素 */
         text-shadow: 0px 0px 50px;
-        /* 透明度 */
         opacity: 0;
     }
     100% {
@@ -49,14 +38,14 @@ h1 {
 
 .link {
     display: block; /* 将超链接显示为块级元素 */
-    margin: 20px auto; /* 垂直和水平居中 */
-    font-size: 3vw; /* 字体大小 */
-    text-align: center; /* 文本居中 */
-    text-decoration: none; /* 去掉下划线 */
-    color: #007bff; /* 链接颜色 */
-    padding: 10px 20px; /* 内边距 */
-    border: 2px solid #007bff; /* 边框 */
-    border-radius: 5px; /* 圆角边框 */
+    margin: 20px auto;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
     transition: all 0.3s ease; /* 添加过渡效果 */
     opacity: 0; /* 初始状态为不可见 */
     animation: showLink 10s forwards; /* 动画延迟 */

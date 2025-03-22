@@ -49,7 +49,7 @@ button:hover {
 .novel {
     margin-bottom: 20px;
     text-align: left;
-    overflow: visible; /* 确保文本可以溢出容器 */
+    overflow: visible; /* 确溢出容器 */
 }
 
 
@@ -85,50 +85,50 @@ button:hover {
 
 
 .btn-green {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: #4CAF50;
+    color: white;
 }
 
 .btn-green:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
 
 .btn-blue {
     background-color: #3498db;
-    color: white; 
+    color: white;
 }
 
 .btn-blue:hover {
-    background-color: #2980b9; 
+    background-color: #2980b9;
 }
 
 
 .btn-red {
-    background-color: #e74c3c; 
-    color: white; 
+    background-color: #e74c3c;
+    color: white;
 }
 
 .btn-red:hover {
-    background-color: #c0392b; 
+    background-color: #c0392b;
 }
 
 .btn-hidden {
-    background-color: #FAFAD2; 
+    background-color: #FAFAD2;
     color:black;
     margin: 20px auto; /* 上下外边距为20px，左右外边距自动居中 */
 }
 
 .btn-hidden:hover {
-    background-color: #DAA520; 
-    
+    background-color: #DAA520;
+
 }
 
 #level3 {
     background-color: #921a17;
-    color: #921a17; 
-    padding: 30px; 
+    color: #921a17;
+    padding: 30px;
     margin-top: 20px;
-    
+
 }
 
 
