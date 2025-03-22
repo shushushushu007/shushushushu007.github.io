@@ -1,0 +1,142 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-size:16px;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:80%;
+    max-width: 600px;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b78968;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #845635;
+}
+
+.board-text {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.novel {
+    margin-bottom: 20px;
+    text-align: left;
+    overflow: visible; /* 确溢出容器 */
+}
+
+
+
+.novel h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.novel .highlight {
+    color: #ff5722;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.novel .dialogue {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.level {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.white-text {
+    color: white;
+}
+
+
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #45a049;
+}
+
+.btn-blue {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #2980b9;
+}
+
+
+.btn-red {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #c0392b;
+}
+
+.btn-hidden {
+    background-color: #FAFAD2;
+    color:black;
+    margin: 20px auto; /* 上下外边距为20px，左右外边距自动居中 */
+}
+
+.btn-hidden:hover {
+    background-color: #DAA520;
+
+}
+
+#level3 {
+    background-color: #921a17;
+    color: #921a17;
+    padding: 30px;
+    margin-top: 20px;
+
+}
+
+
+
+a:visited {
+    color: white; /* 已被访问过的颜色 */
+}
+
+a.keep-color:visited {
+    color: black; /* 这个链接访问后保持黑色 */
+}

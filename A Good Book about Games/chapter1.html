@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《10分钟速通web前端》</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <div class="container">
+        <!-- 1:初始界面 -->
+        <div id="level1" class="level">
+            <h1>《10分钟速通web前端》</h1>
+            <p>请问<font color="red">你</font>叫什么名字?</p>
+            <input>
+            <p>好的，请记住<font color="red">你</font>的名字</p>
+
+            <button onclick="goToLevel(7)">第一章</button>
+            <button onclick="goToLevel(4)">第二章</button>
+            <button onclick="goToLevel(4)">第三章</button>
+
+        </div>
+
+        <!-- 2:第一章按按钮炸弹 -->
+        <div id="level2" class="level" style="display: none;">
+            
+            
+            <p id="hidText1" style="display: none;">三个人靠近门，板子上写了一行字：</p>
+            <p id="hidText2" class="board-text" style="display: none;">只有按了按钮才可以把门打开，不按按钮则会永远无法离开这里。</p>
+            <p id="hidText3" style="display: none;">板子的下方只有一个金色的按钮</p>
+            <p id="hidText4" class="dialogue" style="display: none;">“这什么?这个绑架我们的人把我们当弱智啊。”</p>
+            <p id="hidText5" style="display: none;">理解者S锤了一下按钮,按钮发出金色的光芒</p>
+            <p id="hidText6" class="dialogue" style="display: none;">“那么，出发咯——”</p>
+            <p>请<font color="red">你</font>作出选择</p>
+            <button id="btn1" class="btn btn-green" onclick="buttonClicked('btn1')">观察按了绿色按钮的三人</button>
+            <button id="btn2" class="btn btn-blue" onclick="buttonClicked('btn2')">观察按了蓝色按钮的三人</button>
+            <button id="btn3" class="btn btn-red" onclick="buttonClicked('btn3')">观察按了红色按钮的三人</button>
+
+            <button id="hiddenBtn" class="btn btn-hidden" onclick="goToLevel(13)" style="display: none;">>观察按了金色按钮的三人</button>
+         </div>
+
+         
+
+        <!-- 3:炸弹爆炸 -->
+        <div id="level3" class="level" style="display: none;">
+ 
+            <h1><span class="white-text">砰！</span></h1>
+            <p title="这里好像有什么东西,试着用鼠标选中吧">血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血（编织者用血写下的文字）血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血（理解者看见了这段文字）血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血<span onclick="goToLevel(5)" >观察这段文字</span>血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血（三人失去了呼吸）血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血血
+            </p>
+           
+
+        </div>
+
+        <!-- 4:不从头读 -->
+        <div id="level4" class="level" style="display: none;">
+            <h1>请从头开始读啊！禁止剧透</h1>
+            <button onclick="goToLevel(1)">回到首页</button>
+        </div>
+
+        <!-- 5: 血书 -->
+        <div id="level5" class="level" style="display: none;">
+            <h1>理解者用血写下的文字</h1>
+            <p>观察者,求你点击后退,返回观察的世界。</p>
+            <button onclick="goToLevel(2)">后退</button>
+            <button id="hiddenBtn" class="btn btn-hidden" onclick="goToLevel(13)" style="display: none;">>观察按了金色按钮的三人</button>
+
+        </div>
+
+
+        <!-- 6:三关按过 -->
+        <div id="level6" class="level" style="display: none;">
+            <p>三个人靠近门，板子上写了一行字：</p>
+            <p class="board-text">只有按了按钮才可以把门打开，不按按钮则会永远无法离开这里。</p>
+            <p>板子的下方只有一个金色的按钮</p>
+            <p class="dialogue">“这什么?这个绑架我们的人把我们当弱智啊。”</p>
+            <p>理解者S依次点过三个按钮,按钮发出相应的光芒</p>
+            <p class="dialogue">“那么，我要按咯——”</p>
+            <span onclick="goToLevel(2)">下一页</span>
+            
+        </div>
+
+        <!-- 7: 第一页-->
+        <div id="level7" class="level" style="display: none;">
+            <div class= "novel">
+                <h1>第一章</h1>
+                <p>在一个房间中，三个人醒来了。</p>
+                <p >醒来得非常<strong>突然</strong>。</p>
+
+                <p>三人环顾了一下四周和整个房间的状况，其中一个看起来年龄最大的人率先开口：</p>
+                <p class="dialogue">“你们知道这里是哪里吗？”</p>
+
+                <p>听到这句话，另外两人中的其中一个戴着眼镜的年轻人摇摇头。</p>
+                <p class="dialogue">“不知道啊，一醒来的时候就在这里了。”</p>
+                <p></p>
+                <p class="dialogue">“看来大家都是一样的啊。”</p>
+                <p>最后一个人年纪看起来更小，染着一头显眼的<font color="red">红发</font>，衣服也十分鲜艳。</p>
+
+                <p>三人的所在之处是一个密闭的狭小空间，四周是灰白格相间的诡异墙壁，只有出入口有一扇看上去十分结实的深灰色铁门。</p>
+
+                
+            </div>
+
+            <span onclick="goToLevel(8)">下一页</span>
+         </div>
+
+           <!-- 8: 第二页-->
+        <div id="level8" class="level" style="display: none;">
+            <div class= "novel">
+              
+                <p class="dialogue">“不管怎们样，咱们先来相互认识一下吧。”</p>
+                <p>年纪最大的人率先向另外两人说到，</p>
+                <p class="dialogue">“我叫H，已经工作很久了，我是……”</p>
+
+                <p>说到这里，他突然露出了茫然的神情。</p>
+                <p>直到这时，在场的三人才猛然发现：<strong>他们没有记忆了。</strong></p>
+
+                <p class="dialogue">“我好像除了自己的名字什么都记不起来了…你们呢？”</p>
+
+                <p class="dialogue">“呃，我也是…我叫S…好像。”</p>
+                <p>戴眼镜的年轻人看起来似乎有一些焦虑，他一边近距离观察着铁门，一边说道。</p>
+
+                <p class="dialogue">“我叫C,其他都不记得了。”</p>
+                <p>红发年轻人深深的叹了口气。</p>
+
+                <p>年长者H听闻他人的话，脑中迅速的得出了结论并思考起解决方案。</p>
+                <p class="dialogue">“如果我没猜错的话咱们应该是被囚禁在这里了，虽然不知道犯人把我们囚禁在这里的目的，但是我觉得咱们应该快点自救，要不然不知道还会发生什么。”</p>
+
+                
+            </div>
+            <span onclick="goToLevel(7)">上一页</span>
+            <span onclick="goToLevel(10)">下一页</span>
+         </div>
+
+        <!-- 9: 第三页-->
+        <div id="level9" class="level" style="display: none;">
+            <div class="novel">
+                <p>三个人靠近门，板子上写了一行字：</p>
+                <p class="board-text">只有选择了正确的按钮才可以把门打开，选择错误的按钮则会永远无法离开这里。</p>
+                <p>板子的下方有三个按钮，分别是红、蓝、绿。</p>
+                <p class="dialogue">“要不我们先随便按一个试试看。”</p>
+                <p>理解者S依次点过三个按钮,按钮发出相应的光芒</p>
+                <p class="dialogue">“那么，就这个吧，我要按咯——”</p>
+
+                
+                
+                
+            </div>
+            <span onclick="goToLevel(12)">上一页</span>
+
+            <span onclick="goToLevel(2)">下一页</span>
+        </div>
+
+        <!-- 10: 第四页 -->
+        <div id="level10" class="level" style="display: none;">
+            <div class="novel">
+                <p>话虽如此，可是对于眼下这种毫无线索的情况谁都没有任何办法。</p>
+                <p>“诶？”红发青年C从衣服的口袋中掏出一张卡片。</p>
+                <p>卡片上写着：</p>
+                <p class="dialogue"><strong>幻想者</strong>：你的身份是幻想者，拥有稀有想象力的人，你的语言会给世界带来创造。当什么都做不了的时候，才是你大显身手之时。如果没有你，一切都无法进行。</p>
+                <p>眼镜青年S见状也掏了掏自己的口袋，同样翻出了一张卡片：</p>
+                <p class="dialogue"><strong>理解者</strong>：你的身份是理解者,看到的、听到的、想到的，你都可以解释。请把你的想法告诉一无所知的同伴。你的话会决定大家的行动。</p>
+                <p>H的卡片上则写着：</p>
+                <p class="dialogue"><strong>编织者</strong>：你的身份是编织者。你是所有线索的集合。知道同伴们不知道的事情。请给困惑的同伴们下指示。能做到这个的只有你。</p>
+            </div>
+            <span onclick="goToLevel(8)">上一页</span>
+
+            <span onclick="goToLevel(11)">下一页</span>
+        </div>
+
+        <!-- 11: 第五页 -->
+        <div id="level11" class="level" style="display: none;">
+            <div class="novel">
+                <p>三人看到卡片仍然一头雾水。</p>
+                <p class="dialogue">“难道线索就在这三张纸条上…我们…”</p>
+                <p><span class="dialogue">“等等。”</span>编织者H打断了理解者S的话，<span class="dialogue">“咱们这里…还有一个人在场。”</span></p>
+                <p><span class="dialogue">“这话是什么意思？”</span>理解者S和幻想者C同时看向了编织者H的方向。</p>
+                <p class="dialogue">“我也不知道为什么…也不知道该怎么解释，但是我的脑子里就是突然就知道了，咱们在场的不是三个人…而是四个人。除了我们，还有一个观察者在场。”</p>
+                <p><font color="red">你</font>的身份是?</p><input type="text" title="observer" id="keyInput" placeholder="请输入英文">
+                <button id="submitBtn">提交</button>
+                <p id="errorText" style="color: red; display: none;">错误：请输入真正的身份！</p>
+
+            </div>
+                            <span onclick="goToLevel(10)">上一页</span>
+
+        </div>
+
+        <!-- 12: 第六页 -->
+        <div id="level12" class="level" style="display: none;">
+            <div class="novel">
+                <p class="dialogue">“虽然这个人不在我们面前，但是他一直在观察我们，现在就在看！”</p>
+                <p><span class="dialogue">“不是监控、不是藏在某个地方，是这样吗？”</span>幻想者C顿时有些紧张起来，<span class="dialogue">“不会是把咱们关起来的人吧？”</span></p>
+                <p><span class="dialogue">“你能和他说话吗？”</span>理解者S提问到。</p>
+                <p><span class="dialogue">“我觉得恐怕不能，我们无法得知观察者的意愿，他的职责似乎也只是观察我们。”</span>编织者H沉思着说道。</p>
+                <p><span class="dialogue">“看来也没什么办法了。”</span>理解者S叹了口气。</p>
+
+                <p>自己身上已经没有别的东西和线索了,三人决定探索下这个房间。</p>
+                <p>事实上，在这个房间内的门旁边订着一个十分显眼的黑色板子。</p>
+                <p>三人明显同时想到了这个。</p>
+
+            
+                <p class="dialogue">“我们先去看看板子上的字吧！”</p>
+            </div>            
+            <span onclick="goToLevel(11)">上一页</span>
+
+            <span onclick="goToLevel(9)">下一页</span>
+        </div>
+
+        <!-- 13:第一章结束 -->
+                <div id="level13" class="level" style="display: none;">
+                    <h1>本章完</h1>
+                    <a href="chapter2.html"class="keep-color">进入第二章</a>
+                 </div>
+
+
+
+
+
+
+
+
+
+     </div>
+
+
+        
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
